@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pets</title>
 </head>
 <body>
-    <a href = "#skip">Skip to Main Content</a>
+    <a href = "#skip" class="skipbutton">Skip to Main Content</a>
     <header>
+        <h1 class="pagetitle">Pets</h1>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "pets.html">Pets</a></li>
+                <li><a href = "index.html">Index</a></li>
+                <li><a class="active" href = "pets.html">Current Page: Pets</a></li>
                 <li><a href = "recipes.html">Recipes</a></li>
                 <li><a href = "travel.html">Travel</a></li>
             </ul>
         </nav>
-
     </header>
-    <main id ="skip">
-        <h1>Pets</h1>
+    <main id="skip">
         <!-- Bacon Q Dog -->
         <div>
-            <h2>Bacon Q Dog</h2>
-            <img src="images/bacon.jpg" width = "400" alt="Brown labradoodle wearing colorful lei">
+            <!-- Title -->
+            <h2 class="secondarytitle">Bacon Q Dog</h2>
 
-            <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
-            <P>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
-            <h3>Photo Gallery</h3>
-            <img src="images/bacon_bandana.JPG" width ="200" alt = "Brown labradoodle wearing an orange bandana">
-            <img src="images/bacon_graduation.JPG"  width ="200" alt="Small labradoodle puppy wearing a graduation cap and gown">
-            <video width="200"  controls>
-                <source src="images/bacon_agility.mov">
-                Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
-            </video>
-            <img src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
+            <!-- Image and Description -->
+            <div class="flexcontainer">
+                <div class="test"><img src="images/bacon.jpg" width = "400" alt="Brown labradoodle wearing colorful lei"></div>
+                <div class="petgrid">
+                    <p class="flexitem">Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
+                    <P class="flexitem">At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
+                </div>
+            </div>
 
+            <!-- Photo Gallery -->
+            <h3 class="triarytitle">Photo Gallery</h3>
+            <div class="picture-gallery">
+                <img src="images/bacon_bandana.JPG" width ="200" alt = "Brown labradoodle wearing an orange bandana">
+                <img src="images/bacon_graduation.JPG"  width ="200" alt="Small labradoodle puppy wearing a graduation cap and gown">
+                <video width="200"  controls>
+                    <source src="images/bacon_agility.mov">
+                    Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+                </video>
+                <img src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
+            </div>
             <h3>Likes</h3>
             <ul>
                 <li>Belly rubs</li>
@@ -130,6 +140,8 @@
             <p>Eileen Yan</p>
         </div>
     </main>
-    
+    <footer>
+        <p>Brennen Daudlin's Common Class Project for SI 339 at the University of Michigan, Ann Arbor</p>
+    </footer>
 </body>
 </html>
