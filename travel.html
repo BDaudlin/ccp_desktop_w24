@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Travel</title>
 </head>
 <body>
-    <h1 class="pagetitle">Travel</h1>
+    <a href = "#skip" class="skipbutton">Skip to Main Content</a>
     <header>
+        <h1 class="pagetitle">Travel</h1>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "pets.html">Pets</a></li>
                 <li><a href = "recipes.html">Recipes</a></li>
-                <li><a href = "travel.html">Travel</a></li>
-                <li><a href = "#skip" class="skipbutton">Skip to Main Content</a></li>
+                <li><a class="active" href = "travel.html">Current Page: Travel</a></li>
             </ul>
         </nav>
 
@@ -23,100 +24,181 @@
     <main id="skip">
         <div>
             <!-- Travel 1 -->
-            <h2>Niagara Falls</h2>
-            <img src="images/Niagara_Falls_gif.gif" width = "400" alt="Gif of Niagara Falls">
-            <img src="images/Niagara_Falls_jpg.jpg" width = "400" alt="Jpg of Niagara Falls">
-            <p>Geographical Location: North America</p>
-            <p>Niagara Falls is located on the border between Canada and the United States. Connecting Lake Erie and Lake Ontario, Niagara Falls has the highest flow rate of any waterfall in North America.</p> 
-            <p>Niagara Falls draws in thousands of visitors every year, and for good reason. As such, there are numerous things that you can see while you visit the falls, and it is very easy to make a full trip out of seeing this wonderful sight.</p>
-            <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/Niagara_Falls_2.jpg" width ="200" alt = "A visualization of the ‘Horseshoe’ part of the falls.">
-                <figcaption>The ‘Horseshoe’</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Niagara_Falls_Rainbow.jpg" width ="200" alt = "Niagara Falls with a rainbow touching down in it.">
-                <figcaption>A rainbow in Niagara Falls</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Niagara_Falls_Sunset.jpg" width ="200" alt = "An orange sky overlooking Niagara Falls.">
-                <figcaption>A sunset at Niagara Falls</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Niagara_Falls_Colorful.jpg" width ="200" alt = "Niagara Falls illuminated with colored lights.">
-                <figcaption>A colorful view of Niagara Falls</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Niagara_Falls_Zoom-Out.jpg" width ="200" alt = "Niagara Falls from a distant perspective.">
-                <figcaption>A distant look at Niagara Falls</figcaption>
-            </figure>
+            <h2 class="secondarytitle">Niagara Falls</h2>
+            <div class="petflexboxcontainer">
+                <div class="travel-gallery-grid">
+                    <div class="travel-grid-item">
+                        <img src="images/Niagara_Falls_gif.gif" width = "400" alt="Gif of Niagara Falls">
 
-            <p>Steven Jacovitch</p>
+                    </div>
+                    <div class="travel-grid-item">
+                        <img src="images/Niagara_Falls_jpg.jpg" width = "400" alt="Jpg of Niagara Falls">
+
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <h3 class="triarytitle">Description:</h3>
+                    <p class="text">Niagara Falls is located on the border between Canada and the United States. Connecting Lake Erie and Lake Ontario, Niagara Falls has the highest flow rate of any waterfall in North America.</p> 
+                    <p class="text">Niagara Falls draws in thousands of visitors every year, and for good reason. As such, there are numerous things that you can see while you visit the falls, and it is very easy to make a full trip out of seeing this wonderful sight.</p>
+                    <h3 class="triarytitle">Extra Information:</h3>
+                    <p class="text">Geographical Location: North America</p>
+                    <p class="text">Location Provider: Steven Jacovitch</p>
+                </div>
+            </div>
+
+            <h2 class="secondarytitle">Niagara Falls Photo Gallery</h2>
+            <div class="picture-gallery-grid">
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Niagara_Falls_2.jpg" width ="200" alt = "A visualization of the ‘Horseshoe’ part of the falls.">
+                        <figcaption>The ‘Horseshoe’</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Niagara_Falls_Rainbow.jpg" width ="200" alt = "Niagara Falls with a rainbow touching down in it.">
+                        <figcaption>A rainbow in Niagara Falls</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Niagara_Falls_Sunset.jpg" width ="200" alt = "An orange sky overlooking Niagara Falls.">
+                        <figcaption>A sunset at Niagara Falls</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Niagara_Falls_Colorful.jpg" width ="200" alt = "Niagara Falls illuminated with colored lights.">
+                        <figcaption>A colorful view of Niagara Falls</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Niagara_Falls_Zoom-Out.jpg" width ="200" alt = "Niagara Falls from a distant perspective.">
+                        <figcaption>A distant look at Niagara Falls</figcaption>
+                    </figure>
+                </div>
+            </div>
+          
         </div>
         <div>
             <!-- Travel 2 -->
-            <h2>Shanghai</h2>
-            <img src="images/shanghai_gif.gif" width = "400" alt="Gif of Shanghai">
-            <img src="images/shanghai_non_gif.jpeg" width = "400" alt="jpg of Shanghai">
-            <p>Geographical Location: Asia</p>
-            <p>Shanghai, often referred to as the "Pearl of the Orient," is a dynamic and vibrant metropolis in China. As one of the world's largest cities, Shanghai is a dazzling blend of tradition and modernity. With its iconic skyline featuring towering skyscrapers like the Shanghai Tower and the Oriental Pearl Tower, it's no wonder that Shanghai is often considered the financial and economic hub of Asia. Beyond its impressive architecture, the city boasts a rich cultural heritage, reflected in its historic neighborhoods such as the Bund and the French Concession. Here, you can stroll along tree-lined streets, explore colonial-era buildings, and savor a mix of international cuisines. Shanghai is also a global center for fashion, art, and entertainment, with a thriving arts scene, world-class museums, and a bustling nightlife. Visitors to Shanghai are sure to be captivated by its energy, diversity, and the seamless fusion of old and new.</p> 
-            <p>Shanghai is not just a city of skyscrapers; it's a city of contrasts. The serene Yu Garden and its classical Chinese architecture offer a peaceful escape from the bustling streets, while the ultra-modern shopping districts like Nanjing Road cater to the desires of avid shoppers. The city's food scene is a culinary adventure in itself, with a vast array of local and international dishes available from street vendors to Michelin-starred restaurants. Additionally, Shanghai is a gateway to Chinese culture and history, as it hosts numerous festivals, art exhibitions, and performances that showcase China's heritage. Whether you're wandering through ancient temples, exploring the thriving contemporary art scene, or enjoying a traditional tea ceremony, Shanghai promises a multifaceted experience that captures the essence of China's past, present, and future.</p>
-            <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/yu_garden.jpg" width ="200" alt = "The beautiful Yu Garden, temples and visitors  at night.">
-                <figcaption>Yu Garden is a classical garden built in the Ming Dynasty. It is located in Huangpu District, Shanghai, China. It was in the northeast of the old city of Shanghai, bordering Fuyou Road in the north, Anren Street in the east, and Chenghuang Temple and Yu Garden Mall in the southwest.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/the_bund.jpg" width ="200" alt = "Buildings of various styles from around the world are located by the riverbank.">
-                <figcaption>There are 52 classical revival buildings with different styles standing on the Bund, known as the Bund World Architecture Exhibition Group. It is an important historical site and representative building in modern China, and one of the landmarks of Shanghai. In November 1996, the State Council of the People's Republic of China listed it as the fourth batch of national key cultural heritage protection units.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Shanghai-Tower.jpg" width ="200" alt = "A super tall skyscraper with beautiful appearance.">
-                <figcaption>Shanghai Tower, a huge high-rise landmark skyscraper in Shanghai, is now the tallest building in China and the third tallest building in the world. It was built on November 29, 2008 and the overall construction of the building was completed on March 12, 2016.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/China-Art-Museum.jpg" width ="200" alt = "A building with a red exterior resembling a tripod.">
-                <figcaption>The China Art Museum was renovated from the China National Pavilion at the 2010 Shanghai World Expo. Its predecessor was the Shanghai Art Museum, which was founded in 1956. It was relocated to its current location on October 1, 2012 and renamed as the China Art Museum.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/wukang-building.jpg" width ="200" alt = "A 30 degree building with a red exterior wall.">
-                <figcaption>Wukang Building, formerly known as I.S.S Normandie Apartment, also known as Dongmeite Apartment, is located at 1842-1858 Huaihai Middle Road, Xuhui District, Shanghai. The building was first built in 1924 with funding from the Universal Savings Association and was designed by renowned architect Hudec, who resided in Shanghai. It is the first corridor style apartment building in Shanghai. In 1994, Wukang Building was selected as the second batch of excellent historical buildings in Shanghai.</figcaption>
-            </figure>
+            <h2 class="secondarytitle">Shanghai</h2>
 
-            <p>Yan Lu</p>
+            <div class="petflexboxcontainer">
+                <div class="travel-gallery-grid">
+                    <div class="travel-grid-item">
+                        <img src="images/shanghai_gif.gif" width = "400" alt="Gif of Shanghai">
+
+                    </div>
+                    <div class="travel-grid-item">
+                        <img src="images/shanghai_non_gif.jpeg" width = "400" alt="jpg of Shanghai">
+
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <h3 class="triarytitle">Description:</h3>
+                    <p class="text">Shanghai, often referred to as the "Pearl of the Orient," is a dynamic and vibrant metropolis in China. As one of the world's largest cities, Shanghai is a dazzling blend of tradition and modernity. With its iconic skyline featuring towering skyscrapers like the Shanghai Tower and the Oriental Pearl Tower, it's no wonder that Shanghai is often considered the financial and economic hub of Asia. Beyond its impressive architecture, the city boasts a rich cultural heritage, reflected in its historic neighborhoods such as the Bund and the French Concession. Here, you can stroll along tree-lined streets, explore colonial-era buildings, and savor a mix of international cuisines. Shanghai is also a global center for fashion, art, and entertainment, with a thriving arts scene, world-class museums, and a bustling nightlife. Visitors to Shanghai are sure to be captivated by its energy, diversity, and the seamless fusion of old and new.</p> 
+                    <p class="text">Shanghai is not just a city of skyscrapers; it's a city of contrasts. The serene Yu Garden and its classical Chinese architecture offer a peaceful escape from the bustling streets, while the ultra-modern shopping districts like Nanjing Road cater to the desires of avid shoppers. The city's food scene is a culinary adventure in itself, with a vast array of local and international dishes available from street vendors to Michelin-starred restaurants. Additionally, Shanghai is a gateway to Chinese culture and history, as it hosts numerous festivals, art exhibitions, and performances that showcase China's heritage. Whether you're wandering through ancient temples, exploring the thriving contemporary art scene, or enjoying a traditional tea ceremony, Shanghai promises a multifaceted experience that captures the essence of China's past, present, and future.</p>
+                    <h3 class="triarytitle">Extra Information:</h3>
+                    <p class="text">Geographical Location: Asia</p>
+                    <p class="text">Location Provider: Yan Lu</p>
+                </div>
+            </div>
+
+            <h2 class="secondarytitle">Shanghai Photo Gallery</h2>
+            <div class="picture-gallery-grid">
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/yu_garden.jpg" width ="200" alt = "The beautiful Yu Garden, temples and visitors  at night.">
+                        <figcaption>Yu Garden is a classical garden built in the Ming Dynasty. It is located in Huangpu District, Shanghai, China. It was in the northeast of the old city of Shanghai, bordering Fuyou Road in the north, Anren Street in the east, and Chenghuang Temple and Yu Garden Mall in the southwest.</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/the_bund.jpg" width ="200" alt = "Buildings of various styles from around the world are located by the riverbank.">
+                        <figcaption>There are 52 classical revival buildings with different styles standing on the Bund, known as the Bund World Architecture Exhibition Group. It is an important historical site and representative building in modern China, and one of the landmarks of Shanghai. In November 1996, the State Council of the People's Republic of China listed it as the fourth batch of national key cultural heritage protection units.</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Shanghai-Tower.jpg" width ="200" alt = "A super tall skyscraper with beautiful appearance.">
+                        <figcaption>Shanghai Tower, a huge high-rise landmark skyscraper in Shanghai, is now the tallest building in China and the third tallest building in the world. It was built on November 29, 2008 and the overall construction of the building was completed on March 12, 2016.</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/China-Art-Museum.jpg" width ="200" alt = "A building with a red exterior resembling a tripod.">
+                        <figcaption>The China Art Museum was renovated from the China National Pavilion at the 2010 Shanghai World Expo. Its predecessor was the Shanghai Art Museum, which was founded in 1956. It was relocated to its current location on October 1, 2012 and renamed as the China Art Museum.</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/wukang-building.jpg" width ="200" alt = "A 30 degree building with a red exterior wall.">
+                        <figcaption>Wukang Building, formerly known as I.S.S Normandie Apartment, also known as Dongmeite Apartment, is located at 1842-1858 Huaihai Middle Road, Xuhui District, Shanghai. The building was first built in 1924 with funding from the Universal Savings Association and was designed by renowned architect Hudec, who resided in Shanghai. It is the first corridor style apartment building in Shanghai. In 1994, Wukang Building was selected as the second batch of excellent historical buildings in Shanghai.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
         </div>
         <div>
             <!-- Travel 3 -->
-            <h2>Grand Canyon National Park</h2>
-            <img src="images/Grand_Canyon.gif" width = "400" alt="Gif of the Grand Canyon">
-            <img src="images/Grand_Canyon.jpg" width = "400" alt="jpg of the Grand Canyon">
-            <p>Geographical Location: North America</p>
-            <p>The Grand Canyon is a breathtaking natural wonder located in Arizona, USA, carved by the Colorado River over millions of years. Stretching over 277 miles long, up to 18 miles wide, and over a mile deep, this iconic landmark showcases intricate layers of rock that tell a complex geological history. Its monumental scale and intricate and colorful landscape offer some of the most overwhelming vistas in the world.</p> 
-            <p>Visitors from around the globe flock to the Grand Canyon National Park to witness its grandeur. Whether they experience it by hiking its numerous trails, rafting in the Colorado River, or simply observing from one of the many overlooks, the Grand Canyon offers an unparalleled experience of awe and wonder. Its overwhelming size and intricate and colorful landscape offer a unique spectacle unsurpassed in its ability to illustrate the sheer power of natural forces.</p>
-            <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/Grand_Canyon2.jpg" width ="200" alt = "The view of Grand Canyon National Park in one glance.">
-                <figcaption>Full view of Grand Canyon</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Grand_Canyon3.jpg" width ="200" alt = "A river crosses through the middle of Grand Canyon National Park.">
-                <figcaption>View of the Grand Canyon from above</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Grand_Canyon4.jpg" width ="200" alt = "A view of sunrise at the Grand Canyon National Park.">
-                <figcaption>Sunrise at the Grand Canyon</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Grand_Canyon5.jpg" width ="200" alt = "A view of the Grand Canyon National Park at noon.">
-                <figcaption>Grand Canyon in the sun</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Grand_Canyon6.jpg" width ="200" alt = "A view of sunset at the Grand Canyon National Park.">
-                <figcaption>Sunset at the Grand Canyon</figcaption>
-            </figure>
+            <h2 class="secondarytitle">Grand Canyon National Park</h2>
 
-            <p>Linghao Shi</p>
+
+            <div class="petflexboxcontainer">
+                <div class="travel-gallery-grid">
+                    <div class="travel-grid-item">
+                        <img src="images/Grand_Canyon.gif" width = "400" alt="Gif of the Grand Canyon">
+
+                    </div>
+                    <div class="travel-grid-item">
+                        <img src="images/Grand_Canyon.jpg" width = "400" alt="jpg of the Grand Canyon">
+
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <h3 class="triarytitle">Description:</h3>
+                    <p class="text">The Grand Canyon is a breathtaking natural wonder located in Arizona, USA, carved by the Colorado River over millions of years. Stretching over 277 miles long, up to 18 miles wide, and over a mile deep, this iconic landmark showcases intricate layers of rock that tell a complex geological history. Its monumental scale and intricate and colorful landscape offer some of the most overwhelming vistas in the world.</p> 
+                    <p class="text">Visitors from around the globe flock to the Grand Canyon National Park to witness its grandeur. Whether they experience it by hiking its numerous trails, rafting in the Colorado River, or simply observing from one of the many overlooks, the Grand Canyon offers an unparalleled experience of awe and wonder. Its overwhelming size and intricate and colorful landscape offer a unique spectacle unsurpassed in its ability to illustrate the sheer power of natural forces.</p>
+                    <h3 class="triarytitle">Extra Information:</h3>
+                    <p class="text">Geographical Location: North America</p>
+                    <p class="text">Location Provider: Linghao Shi</p>
+                </div>
+            </div>
+
+            <h2 class="secondarytitle">Photo Gallery</h2>
+            <div class="picture-gallery-grid">
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Grand_Canyon2.jpg" width ="200" alt = "The view of Grand Canyon National Park in one glance.">
+                        <figcaption>Full view of Grand Canyon</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Grand_Canyon3.jpg" width ="200" alt = "A river crosses through the middle of Grand Canyon National Park.">
+                        <figcaption>View of the Grand Canyon from above</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Grand_Canyon5.jpg" width ="200" alt = "A view of the Grand Canyon National Park at noon.">
+                        <figcaption>Grand Canyon in the sun</figcaption>
+                    </figure>
+                </div>
+                <div class="picture-grid-item">
+                    <figure>
+                        <img src="images/Grand_Canyon6.jpg" width ="200" alt = "A view of sunset at the Grand Canyon National Park.">
+                        <figcaption>Sunset at the Grand Canyon</figcaption>
+                    </figure>
+                </div>
+            </div>
+
         </div>
     </main>
+    <footer>
+        <p>Brennen Daudlin's Common Class Project for SI 339 at the University of Michigan, Ann Arbor</p>
+    </footer>
 </body>
 </html>
