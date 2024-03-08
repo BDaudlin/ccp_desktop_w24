@@ -12,7 +12,7 @@ header ul{
 }
 
 header li{
-    float: left;
+    float: none;
 }
 
 header li a{
@@ -62,6 +62,7 @@ h1.pagetitle{
     font-size: 40px;
     margin: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
 
@@ -106,7 +107,7 @@ hr.divider{
 
 .skipbutton:focus{
     position: static;
-    width: 10%;
+    width: 20%;
     height: auto;
     background-color: red;
     text-align: center;
@@ -175,7 +176,6 @@ footer{
   background-color: #333;
   color: white;
   text-align: center;
-
   margin-top: auto;
 }
 
@@ -191,19 +191,26 @@ footer{
 
 /* Pets Grid for image and description as well as theres likes and owner */
 .image img{ 
-    /* Getting image to fit in mobile */
-    max-width: 100%;
-    height: auto;
-    flex: 0 0 auto;
-    margin-right: 10px;
-
     /* Border Color */
     border: 4px solid rgb(51, 47, 47);
+
+    /* Getting image to fit in mobile */
+    display: block;
+    max-width: calc(100% - 8px);
+    max-height: calc(100% - 8px);
+    margin: auto;
 }
 
-.petflexboxcontainer{
-    display: flex;
-    flex-wrap: wrap;
+.petgrid{
+    /* Create the grid */
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    row-gap: 5px;
+    
+    /* Center the Content in the Grid */
+    justify-content: center;
+    align-content: center;
 }
 
 .paragraph{
@@ -304,6 +311,11 @@ body{
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    /* For the fade in animation */
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 /* Style text chunks */
@@ -319,6 +331,7 @@ div.textchunk{
 
 
 
+
 /* Recipe Steps */
 ul.recipesteps{
     margin-left: 40px;
@@ -326,9 +339,12 @@ ul.recipesteps{
 }
 
 .recipe-gallery-grid{
+    /* Create the grid */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
     margin-bottom: 10px;
 }
 
@@ -336,58 +352,151 @@ ul.recipesteps{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     position: relative;
-    max-height: auto;
 }
 
 .recipe-grid-item img, .recipe-grid-item video{
-    max-width: 100%;
+    /* max-width: 100%;
     height: auto;
-    display: block;
+    display: block; */
 
     /* Border of Content */
     border: 4px solid rgb(51, 47, 47);
+    /* Getting image to fit in mobile */
+    display: block;
+    max-width: calc(100% - 8px);
+    max-height: calc(100% - 8px);
+    margin: auto;
 }
 
 
 
 
 
-
+.travel-grid{
+    /* Create the grid */
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    row-gap: 5px;
+    
+    /* Center the Content in the Grid */
+    justify-content: center;
+    align-content: center;
+}
 
 
 
 
 .travel-gallery-grid{
+    /* Create the grid */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 100%;
+    row-gap: 10px;
     margin-bottom: 10px;
-}
-
-.travel-grid-item{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    max-height: auto;
+    align-content: center;
 }
 
 .travel-grid-item img, .travel-grid-item video{
-    max-width: 100%;
-    height: auto;
-    display: block;
-
     /* Border of Content */
     border: 4px solid rgb(51, 47, 47);
+
+    /* Getting image to fit in mobile */
+    display: block;
+    max-width: calc(100% - 8px);
+    max-height: calc(100% - 8px);
+    margin: auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* Picture Gallery Grid Arrangement */
+.travel-picture-gallery-grid{
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.travel-picture-grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.travel-picture-grid-item img, .travel-picture-grid-item video{
+    /* Border of Content */
+    border: 4px solid rgb(51, 47, 47);
+
+    /* Getting image to fit in mobile */
+    display: block;
+    max-width: calc(100% - 8px);
+    max-height: calc(100% - 8px);
+    margin: auto;
+}
 
 /* Reduced Motion Preference */
 @media (prefers-reduced-motion: reduce){
     html img[src$=".gif"]{
         display: none;
     }
+    body{
+        animation: none;
+    };
+}
+
+/* Fade in animation */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Tablet View */
+
+@media only screen and (min-width: 768px){
+
+    /* Push page title to the left */
+    h1.pagetitle{
+        text-align: left;
+    }
+
+    /* Change navbar to sit on single column */
+    header li{
+        float: left;
+    }
+
+
+    /* Pets Page */
+    .petgrid{
+        grid-template-columns: 50% 50%;
+    }
+
+    .recipe-gallery-grid{
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .travel-gallery-grid{
+        grid-template-columns: 50% 50%;
+    }
+
+    .travel-picture-gallery-grid{
+        grid-template-columns: 50% 50%;
+    }
+
+
 }
