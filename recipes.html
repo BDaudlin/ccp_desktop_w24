@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Recipes</title>
 </head>
 <body>
@@ -23,9 +24,12 @@
     </header>
     <main id="skip">
         <!-- Recipe 1 -->
-        <div>
+        <div id="cookie">
             <!-- Title -->
             <h2 class="secondarytitle">Double Chocolate Cookies</h2>
+
+            <input type="button" value="Print Cookies Info" onclick="printDiv('cookie')" id="printbutton">
+
             <div class="petgrid">
                 <div class="image">
                     <img src="images/double_chocolate_cookies.png" width = "400" alt="A stack of chocolate chip cookies with chocolate chips surrounding them">
@@ -86,9 +90,12 @@
 
         </div>
         <!-- Recipe 2 -->
-        <div>
+        <div id="mac">
             <!-- Title -->
             <h2 class="secondarytitle">Homemade Mac & Cheese</h2>
+
+            <input type="button" value="Print Mac & Cheese Info" onclick="printDiv('mac')" id="printbutton">
+
             <div class="petgrid">
                 <div class="image">
                     <img src="images/mac&cheese.jpg" width = "400" alt="An image of mac and cheese being scooped by a wooden spoon">
@@ -142,9 +149,12 @@
 
         </div>
         <!-- Recipe 3 -->
-        <div>
+        <div id="zucc">
             <!-- Title -->
             <h2 class="secondarytitle">Zucchini Fritters</h2>
+
+            <input type="button" value="Print Zucchini Info" onclick="printDiv('zucc')" id="printbutton">
+            
             <div class="petgrid">
                 <div class="image">
                     <img src="images/Zucchini_fritters_1.jpeg" width = "400" alt="A plate of Zucchini Fritters">

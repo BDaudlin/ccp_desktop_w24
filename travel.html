@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Travel</title>
 </head>
 <body>
@@ -22,9 +23,12 @@
 
     </header>
     <main id="skip">
-        <div>
+        <div id="n_falls">
             <!-- Travel 1 -->
             <h2 class="secondarytitle">Niagara Falls</h2>
+
+            <input type="button" value="Print Niagara Fall's Info" onclick="printDiv('n_falls')" id="printbutton">
+
             <div class="travel-grid">
                 <div class="travel-gallery-grid">
                     <div class="travel-grid-item">
@@ -81,9 +85,11 @@
             </div>
           
         </div>
-        <div>
+        <div id="shang">
             <!-- Travel 2 -->
             <h2 class="secondarytitle">Shanghai</h2>
+
+            <input type="button" value="Print Shangai's Info" onclick="printDiv('shang')" id="printbutton">
 
             <div class="travel-grid">
                 <div class="travel-gallery-grid">
@@ -141,10 +147,11 @@
             </div>
 
         </div>
-        <div>
+        <div id="gcnp">
             <!-- Travel 3 -->
             <h2 class="secondarytitle">Grand Canyon National Park</h2>
 
+            <input type="button" value="Print Grand Canyon National Park's Info" onclick="printDiv('gcnp')" id="printbutton">
 
             <div class="travel-grid">
                 <div class="travel-gallery-grid">

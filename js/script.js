@@ -1,9 +1,10 @@
-document.getElementById('printButton').addEventListener('click', function() {
-    var content = document.getElementById('content').innerHTML;
-    var printWindow = window.open('', '_blank');
-    printWindow.document.write('<html><head><title>Print Content</title></head><body>');
-    printWindow.document.write(content);
-    printWindow.document.write('</body></html>');
-    printWindow.document.close();
-    printWindow.print();
-});
+function printDiv(cont) { 
+    var divContents = document.getElementById(cont).innerHTML; 
+    var a = window.open('', '', 'height=500, width=500'); 
+    a.document.write(divContents); 
+    
+    // Wait half a second before calling up print 
+    setTimeout(function() {
+                a.print(); 
+            }, 500);
+}

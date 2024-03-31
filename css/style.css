@@ -535,15 +535,8 @@ ul.recipesteps{
 }
 
 
-#printButton {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
-#printButton:hover {
-    background-color: #45a049;
+
+#printbutton{
+    margin: 7px;
 }
